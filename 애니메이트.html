@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애니메이트</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+
+        $(document).ready(function(){
+
+            $('.box').css({
+                width:300,
+                height:300,
+                backgroundColor:'cornflowerblue',
+                position:'relative'
+            })
+
+            // $('.box').animate({
+            //     width:400,
+            //     height:400
+            // },2000,function(){
+            //     $(this).animate({
+            //         marginLeft:200
+            //     },function(){
+            //         $(this).animate({
+            //             paddingTop:200
+            //         },function(){
+            //             $(this).animate({
+            //                 top:300,
+            //                 left:300
+            //             },function(){
+            //                 $(this).animate({
+            //                     opacity:0.5
+            //                 })
+            //             })
+            //         })
+            //     })
+            // })
+
+
+            // 문제1
+            // 박스를 클릭하면 왼쪽에서 3초에 걸처서 300만큼 이동하기 
+
+            $('.box').click(function(){
+                $(this).animate({
+                    left:300
+                },3000,function(){
+                    $(this).animate({
+                        top:300
+                    },2000,function(){
+                        $(this).animate({
+                            left:0,
+                        },function(){
+                            $(this).animate({
+                                top:0
+                            });
+                        });
+                    });
+                });
+            });
+
+
+
+        });//end
+
+    </script>
+</head>
+<body>
+    
+    <div class="box"></div>
+
+</body>
+</html>

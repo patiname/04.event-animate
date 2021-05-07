@@ -37,3 +37,15 @@ $(선택자).명령어(function(){
 }, function(){
 또 다른식
 });
+
+\*애니메이트
+=>요소에 애니메이션을 적용할수있음
+=>$(선택자).animate({
+속성: 속성값
+},시간,가속도,콜백함수)
+=>width,height
+=>margin
+=>padding
+=>position
+=>opacity
+=>scroll
