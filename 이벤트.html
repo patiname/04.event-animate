@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+
+        $(document).ready(function(){
+
+            $('.box').css({
+                width:300,
+                height:300,
+                backgroundColor:"salmon",
+                position:'absolute',
+                top:0,
+                left:0
+            });
+
+            // $('.box').mousemove(function(){
+            //     $('.box').css({
+            //         backgroundColor:"gold"
+            //     })
+            // });
+
+            // $('.box').mouseenter(function(){
+            //     $('.box').css({
+            //         width:500
+            //     })
+            // });
+
+            // $('.box').mouseleave(function(){
+            //     $('.box').css({
+            //         width:300
+            //     })
+            // });
+
+            // $('.box').mousedown(function(){
+            //     $('.box').css({
+            //         borderRadius:'50%'
+            //     });
+            // });
+
+            // $('.box').mouseup(function(){
+            //     $('.box').css({
+            //         borderRadius:0
+            //     })
+            // });
+
+            // $('.box').click(function(){
+            //     $(this).css({
+            //         backgroundColor:"gold"
+            //     })
+            // });
+
+            // $('.box').dblclick(function(){
+            //     $(this).css({
+            //         transform: 'rotateZ(45deg)'
+            //     })
+            // });
+
+            // $('.box').hover(function(){
+            //     $(this).css({
+            //         backgroundColor:"#84b528"
+            //     })
+            // },function(){
+            //     $(this).css({
+            //         backgroundColor:"tan"
+            //     })
+            // });
+
+            // 문제
+            // 박스를 클릭했을때 
+            // top에서 300, left에서 300만큼 이동시키기
+
+            // $('.box').click(function(){
+            //     $(this).css({
+            //         // margin:'300px 0 0 300px'
+            //         // transform: 'translate(300px, 300px)'
+            //         top:300,
+            //         left:300
+            //     })
+            // });
+
+
+        });//end
+
+    </script>
+
+
+
+
+</head>
+<body>
+
+    <div class="box"></div>
+    
+</body>
+</html>
